@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .tamanyo{
+            width: 160px;
+            height: 80px;
+            margin: 30px;
+        }
+        main .cuadrados{
+            display: flex;
+            justify-content: center;
+            margin: 130px 0px 130px 0px;
+        }
+
+        .col1{
+            background-color: black;
+        }
+
+        .col1:hover{
+            transform: rotate(-45deg) translate(0px,300px) scale(0.5);
+            background-color: green;
+            transition: 0.5s;
+        }
+
+
+        .col2{
+            background-color: blue;
+        }
+
+        .col2:hover{
+            transform: scaleX(-1);
+            transition: 1s;
+        }
+
+        .col3{
+            background-color: red;
+        }
+
+        .col3:hover{
+            transform: scaleY(2);
+            transition: 1s;
+        }
+
+        .col4{
+            background-color: gray;
+        }
+
+        .col4:hover{
+            transform: rotate(90deg) skewX(-45deg);
+            transition: 1s;
+        }
+
+
+
+
+
+        .cuadrados2{
+            display: flex;
+            justify-content: center;
+        }
+
+        .c1{
+            background-color: blueviolet;
+            margin: 30px;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            transition-duration: 1s;
+            transition-property: all;
+            transition-delay: 2s;
+        }
+
+        .c1:hover{
+            background-color: cadetblue;
+            transform: translateY(-10px);
+            transition: 1s;
+        }
+
+
+        .cuadrados3, .cuadrados4, .cuadrados5, .cuadrados6{
+            border: 1px solid red;
+            margin-bottom: 25px;
+        }
+
+        .c2, .c3, .c4, .c5{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            transition: 2s;
+        }
+
+        .c2:hover{
+            transform: translateX(1746px);
+            transition: all 2s ease-in 0.5;
+        }
+
+        .c3:hover{
+            transform: translateX(1746px);
+            transition: all 2s ease-out 0.5;
+        }
+
+        .c4:hover{
+            transform: translateX(1746px);
+            transition: all 2s linear 0.5;
+        }
+
+        .c5:hover{
+            transform: translateX(1746px);
+            transition: all 2s ease-in-out 0.5;
+        }
+
+
+        .cuadrados7{
+            width: 150px;
+            height: 150px;
+            border: 1px solid red;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .c6,.c7,.c8{
+            background-color: purple;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        .c6{
+            z-index: 3;
+            margin-left: 100px;
+        }
+
+        .c7{
+            z-index: 1;
+        }
+
+        .c8{
+            z-index: 1;
+            margin-left: 200px;
+        }
+
+
+
+
+        .botonVimeo{
+            position: relative;
+            width: 300px;
+            height: 100px;
+        } 
+
+        .unirse{
+            z-index: 1;
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            background-color: blueviolet;
+            color: white;
+            translate: 50px;
+        }
+
+        .azul{
+            display: flex;
+            width: 300px;
+            overflow: hidden;
+            height: 100px;
+            position: absolute;
+            background-color: blueviolet;
+            color: white;
+        }
+
+    </style>
+    <main>
+        <div class="cuadrados">
+            <div class="tamanyo col1"></div>
+            <div class="tamanyo col2">Sigma</div>
+            <div class="tamanyo col3"></div>
+            <div class="tamanyo col4"></div>
+        </div>
+        <div class="cuadrados2">
+            <div class="c1">Home</div>
+            <div class="c1">About</div>
+            <div class="c1">Contact</div>
+        </div>
+        <div class="cuadrados3">
+            <div class="c2"></div>
+        </div>
+
+        <div class="cuadrados4">
+            <div class="c3"></div>
+        </div>
+
+        <div class="cuadrados5">
+            <div class="c4"></div>
+        </div>
+
+        <div class="cuadrados6">
+            <div class="c5"></div>
+        </div>
+
+
+
+        <div class="cuadrados7">
+            <div class="c6">Primero</div>
+            <div class="c7">Segundo</div>
+            <div class="c8">Tercero</div>
+        </div>
+
+        <div class="botonVimeo">
+            <div class="azul"
+            <div class="unirse">Unirse
+                <div class="movimientoFlecha">
+                    <div class="flecha">-> -></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
